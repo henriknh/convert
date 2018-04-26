@@ -3,10 +3,9 @@ RUN apk update
 
 ADD convert.py convert.py
 
-RUN apk add --no-cache \
+RUN apk --no-cache add \
     ffmpeg \
-    python3 \
-    python3-pip
+    python3
 
 RUN pip3 install \
     pyinotify
